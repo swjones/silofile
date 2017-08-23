@@ -23,8 +23,9 @@ class silofile():
         create some 3d data:
         >>> xx,yy,zz = np.meshgrid(x,y,z)
         >>> spam = np.cos(xx) + 2.*np.sin(xx-yy) + 4.*np.cos(yy-zz)**2
+        >>> jones = np.sqrt(np.abs(spam))
         create the object:
-        >>> s = sf(mesh, ["spam"], [spam])
+        >>> s = sf(mesh, ["spam","jones"], [spam,jones])
         write the file:
         >>> s.write("myfile.silo")
         """
