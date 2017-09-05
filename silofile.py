@@ -1,6 +1,3 @@
-import pyvisfile.silo as silo
-from warnings import warn
-
 """
 Module for creating Silo-format files
 
@@ -19,6 +16,9 @@ create the object:
 write the file:
 >>> s.write("myfile.silo")
 """
+
+import pyvisfile.silo as silo
+from warnings import warn
 
 
 class silofile():
